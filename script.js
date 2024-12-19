@@ -9,9 +9,9 @@ let currentDirection = "idle"; // Track the player's current direction
 
 // Gifs for character animations
 const characterAnimations = {
-  idle: "url('assets/characters/Elliot_idle.gif')", // Idle GIF
-  left: "url('assets/characters/Elliot_running_left.gif')", // Running left GIF
-  right: "url('assets/characters/Elliot_running_right.gif')", // Running right GIF
+  idle: "url('Elliot_idle.gif')", // Idle GIF
+  left: "url('Elliot_running_left.gif')", // Running left GIF
+  right: "url('Elliot_running_right.gif')", // Running right GIF
 };
 // Initial Scene
 const introMessage = "Welcome to The Signal.\n\nYou are a lonely software engineer working late at night. Use the Arrow keys to move and press 'E' to interact. Beware of the messages—they may reveal more than you want to know...\n\nFind the object. It calls to you.";
@@ -25,7 +25,7 @@ function startGame() {
   setTimeout(() => {
     openingScreen.style.display = "none"; // Hide the opening screen
     gameContainer.style.display = "block"; // Show the game container
-    gameArea.style.backgroundImage = "url('assets/background.gif')"; // Set background GIF for first scene
+    gameArea.style.backgroundImage = "url('background.gif')"; // Set background GIF for first scene
     gameArea.style.backgroundSize = "cover"; // Ensure the background fills the area
     gameArea.style.backgroundPosition = "center";
 
@@ -83,7 +83,7 @@ function showFirstSceneButton() {
 // Show second scene (background transition)
 function showSecondScene() {
   // Change background and display new text
-  gameArea.style.backgroundImage = "url('assets/first-scene.png')";
+  gameArea.style.backgroundImage = "url('first-scene.png')";
   displayMessage("While debugging code you get a mysterious email from your work \n You are working ...", showScrollableGameButton);
 }
 
@@ -124,7 +124,7 @@ function startScrollableGame() {
   scrollableArea.id = "scrollable-area";
   scrollableArea.style.width = "1000px"; // Full scrollable width
   scrollableArea.style.height = "480px"; // Full scrollable height
-  scrollableArea.style.backgroundImage = "url('assets/scrolling_background.png')";
+  scrollableArea.style.backgroundImage = "url('scrolling_background.png')";
   scrollableArea.style.backgroundSize = "cover";
   scrollableArea.style.position = "absolute";
   scrollableArea.style.top = "0";
